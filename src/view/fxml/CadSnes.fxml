@@ -8,18 +8,18 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.cadastros.CadSnesController">
    <children>
-      <TextField layoutX="43.0" layoutY="76.0" prefHeight="26.0" prefWidth="213.0" />
+      <TextField fx:id="txtNomeJogo" layoutX="43.0" layoutY="76.0" prefHeight="26.0" prefWidth="213.0" />
       <Label layoutX="43.0" layoutY="53.0" text="Nome do jogo" />
       <Label layoutX="43.0" layoutY="116.0" text="Data de lançamento" />
-      <DatePicker layoutX="43.0" layoutY="145.0" />
+      <DatePicker fx:id="dataLancamentoPicker" layoutX="43.0" layoutY="145.0" />
       <Label layoutX="43.0" layoutY="192.0" text="Descriçao" />
-      <TextArea layoutX="42.0" layoutY="215.0" prefHeight="105.0" prefWidth="213.0" promptText="Uma breve descriçao sobre o jogo" wrapText="true" />
+      <TextArea fx:id="txtAreaDescricao" layoutX="42.0" layoutY="215.0" prefHeight="105.0" prefWidth="213.0" promptText="Uma breve descriçao sobre o jogo" wrapText="true" />
       <Label layoutX="302.0" layoutY="68.0" text="Capa do jogo" />
-      <Button layoutX="345.0" layoutY="89.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Escolher imagem..." />
+      <Button fx:id="btnEscolheCapa" layoutX="345.0" layoutY="89.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Escolher imagem..." />
       <ImageView fitHeight="186.0" fitWidth="266.0" layoutX="311.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="209.0" layoutY="346.0" mnemonicParsing="false" text="Cadastrar" />
-      <Button layoutX="314.0" layoutY="346.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Limpar" />
+      <Button fx:id="btnCadastrar" layoutX="209.0" layoutY="346.0" mnemonicParsing="false" text="Cadastrar" />
+      <Button fx:id="btnLimpar" layoutX="314.0" layoutY="346.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Limpar" />
    </children>
 </Pane>

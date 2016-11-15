@@ -11,6 +11,7 @@ public class Games {
     private String image;
     private String desc;
     private String releaseDate;
+    private String console;
 
     public Games() {
     }
@@ -47,6 +48,14 @@ public class Games {
         this.releaseDate = releaseDate;
     }
 
+    public String getConsole() {
+        return console;
+    }
+
+    public void setConsole(String console) {
+        this.console = console;
+    }
+
     @Override
     public String toString() {
         return "Games{" +
@@ -54,6 +63,7 @@ public class Games {
                 ", image='" + image + '\'' +
                 ", desc='" + desc + '\'' +
                 ", releaseDate='" + releaseDate + '\'' +
+                ", console='" + console + '\'' +
                 '}';
     }
 
